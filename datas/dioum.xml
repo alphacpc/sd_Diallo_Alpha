@@ -1,1 +1,14 @@
-<personne sexe="masculin"><numero /><nom>Dioum</nom><prenom>Ousseynou</prenom><notes><devoir>16</devoir><examen>12</examen></notes></personne>
+<personne sexe="masculin">
+    <numero />
+    <nom>Dioum</nom>
+    <prenom>Ousseynou</prenom>
+    <adress>
+        <region/>
+        <ville/>
+        <rue/>
+    </adress>
+    <notes>
+        <devoir>16</devoir>
+        <examen>12</examen>
+    </notes>
+</personne>
