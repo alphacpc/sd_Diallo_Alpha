@@ -1,19 +1,37 @@
 from tkinter import *
-from tkinter.filedialog import askopenfile
+from tkinter.filedialog import askopenfile;
+import csv;
+
+import make_dict;
 
 List_types = [ ( "Fichier csv" , ".csv" ) , ( "Fichier json" , ".json" ) , ( "Fichier yaml" , ".yaml" ) , ( "Fichier xml" , ".xml" ) ]
 
 #Create functions
 def getFile():
-    print("Hello world !")
+
     file_path = askopenfile(mode='r', filetypes=List_types)
-    print(file_path)
 
     if file_path is not None:
         filename =  str(file_path.name).split('/')[-1]
         print(filename)
-        window.destroy
-        pass
+
+        file_entry.delete(0,END);
+        file_entry.insert(0,filename);
+        
+        if "csv" in filename:
+            make_dict.csv_to_dict(file_path.name)
+
+        elif "json" in filename:
+            make_dict.json_to_dict(file_path.name)
+            
+        elif "yaml" in filename:
+            make_dict.yaml_to_dict(file_path.name)
+
+        elif "xml" in filename:
+            make_dict.xml_to_dict(file_path.name)
+
+        else:
+            pass
 
 
 #Creation de fenetre
@@ -38,13 +56,29 @@ label_title.pack(pady=10, fill=X)
 
 
 #Ajouter un bouton
-btn = Button(frame_text, text="Choisir un fichier", font=("Montserrat", 20), bg="#F05", fg="#fff", 
-                height=2, width=20 , bd=2 , activeforeground="#000000", activebackground="#F2F5C8", command=getFile);
-
+btn = Button(frame_text, text="Choisir un fichier", font=("Montserrat", 20), bg="#F05", fg="#fff", bd=1 , activeforeground="#000000", activebackground="#F2F5C8", command=getFile);
 btn.pack(pady=40)
+
+btn_csv = Button(frame_input, text="convertir en csv", font=("Montserrat", 20), bg="#F05", fg="#fff", bd=1 , activeforeground="#000000", activebackground="#F2F5C8");
+btn_csv.pack(pady=4)
+
+btn_xml = Button(frame_input, text="convertir en xml", font=("Montserrat", 20), bg="#F05", fg="#fff", bd=1 , activeforeground="#000000", activebackground="#F2F5C8");
+btn_xml.pack(pady=4)
+
+btn_json = Button(frame_input, text="convertir en json", font=("Montserrat", 20), bg="#F05", fg="#fff", bd=1 , activeforeground="#000000", activebackground="#F2F5C8");
+btn_json.pack(pady=4)
+
+btn_yaml = Button(frame_input, text="convertir en yaml", font=("Montserrat", 20), bg="#F05", fg="#fff", bd=1 , activeforeground="#000000", activebackground="#F2F5C8");
+btn_yaml.pack(pady=4)
+
+
+file_entry = Entry(frame_text, font=("Montserrat",25), fg="#219F94", bg="#FFFFFF" )
+file_entry.pack()
+
 
 #Ajouter le frame
 frame_text.pack(expand=YES)
+frame_input.pack(expand=YES)
 
 
 #Affichage

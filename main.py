@@ -30,7 +30,9 @@ with open("datas/dioum.xml") as fxml:
     root = file.getroot()
     for child in root:
         print(child.tag, child.text)
-        
+        if len(child)>0:
+            for item in child:
+                print(item.tag, child.text)
 
 
 print('\n\n')
