@@ -1,0 +1,56 @@
+elment1:
+  CODE: AAD003
+  Classe: 6ieme A
+  Date: 16-Aug-99
+  Nom: CISSE
+  Note: '12'
+  Numero: 2014079LH
+  Prenom: Baba
+elment2:
+  CODE: AAD003
+  Classe: 5ieme A
+  Date: 12/9/2000
+  Nom: NDIAYE
+  Note: '15'
+  Numero: 2016023LD
+  Prenom: mbaye
+elment3:
+  CODE: AAD003
+  Classe: 3iemeA
+  Date: 13-4-2012
+  Nom: GAYE
+  Note: '11'
+  Numero: 286325HG
+  Prenom: Awa
+elment4:
+  CODE: AAD003
+  Classe: 6iemeB
+  Date: 12-04-2000
+  Nom: NDAO
+  Note: '10'
+  Numero: 201817JK
+  Prenom: Ndiaga
+elment5:
+  CODE: AAD003
+  Classe: 5iemeB
+  Date: 19.03.2005
+  Nom: DEME
+  Note: '8'
+  Numero: 65281LKJ
+  Prenom: Saliou
+elment6:
+  CODE: AAD003
+  Classe: 3iemeB
+  Date: 3-12-2001
+  Nom: Ngadeu
+  Note: '13'
+  Numero: 2007095KH
+  Prenom: Dinka
+elment7:
+  CODE: AAD003
+  Classe: 4iemeC
+  Date: 19/6/1996
+  Nom: BA
+  Note: '17'
+  Numero: 201607RK
+  Prenom: Mouhamed
