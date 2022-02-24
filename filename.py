@@ -9,4 +9,4 @@ print(result)
 with open(myPath) as fcsv:
     reader = csv.DictReader(fcsv);
     for row in reader:
-        print(row,'\n')
+        print(row,'\n');

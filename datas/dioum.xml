@@ -1,12 +1,7 @@
 <personne sexe="masculin">
     <numero />
-    <nom>Dioum</nom>
+    <nom id="lname">Dioum</nom>
     <prenom>Ousseynou</prenom>
-    <adress>
-        <region/>
-        <ville/>
-        <rue/>
-    </adress>
     <notes>
         <devoir>16</devoir>
         <examen>12</examen>

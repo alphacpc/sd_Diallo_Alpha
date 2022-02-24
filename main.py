@@ -12,6 +12,8 @@ with open("datas/dioum.json") as fjson:
     file = json.load(fjson);
     print(file);
 
+    
+
 print('\n\n')
 print('******************YAML********************')
 print('\n\n')
