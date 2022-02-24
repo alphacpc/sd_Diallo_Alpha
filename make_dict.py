@@ -31,9 +31,11 @@ def xml_to_dict(filename):
 
 
 
-
 def csv_to_dict(filename):  
     with open(filename) as fcsv:
         reader = csv.DictReader(fcsv);
         for row in reader:
             print(row,'\n')
+
+
+yaml_to_dict("datas/dioum.yaml")
